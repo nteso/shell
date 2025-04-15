@@ -24,7 +24,8 @@ else
   echo "🧪 Detected OS: $OSTYPE"
 fi
 
-echo -e "\n🚜 This script will create the project directory \e[1m'agrichain/'\e[0m in: \e[34m$(pwd)\e[0m"
+
+echo -e "\n🚜 This script will create the project directory \e[1m'$PROJECT_NAME/'\e[0m in: \e[34m$(pwd)\e[0m"
 read -p "❓ Do you want to continue? [y/N] " confirm
 if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
   echo "❌ Aborted by user."
